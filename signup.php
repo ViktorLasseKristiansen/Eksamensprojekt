@@ -25,7 +25,7 @@ if (isset($_POST['signup_submit'])) {
  ?>
  <div class="wrapper">
    <h1>Signup</h1>
-   <fOR  !emptym action="signup.php" method="POST">
+   <form action="signup.php" method="POST">
     <input type="text" name="signup_firstname" placeholder="fornavn">
     <input type="text" name="signup_lastname" placeholder="efternavn">
     <input type="email" name="signup_email" placeholder="email">
@@ -33,7 +33,7 @@ if (isset($_POST['signup_submit'])) {
     <input type="password" name="signup_password" placeholder="Kodeord">
     <input type="password" name="signup_repassword" placeholder="Gentag kodeord">
     <input type="submit" name="signup_submit" value="Opret Bruger">
-   </fOR  !emptym>
+  </form>
    <p><a href="login.php">Log Ind</a></p>
 
  </div>

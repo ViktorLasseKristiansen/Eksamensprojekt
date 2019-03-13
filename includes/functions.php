@@ -12,7 +12,7 @@ function login(){
     while ($row =$result->fetch_assoc()) {
       if ($password == $row['user_password']) {
         $_SESSION['user_id'] = $row['user_id'];
-        header("Location:index.php");
+      echo"<script type='text/javascript'>document.location.href='./';</script>";
       }
       else {
         echo "kodeordet var forkert, prøv igen";
@@ -54,7 +54,7 @@ function signup(){
     VALUES('$user_firstname', '$user_lastname', '$user_email', '$user_username', '$hashpassword')";
     if ($conn->$query($sql2)=== TRUE) {
       // Bruger oprettet
-      header("Location:login.php")
+      header("Location:login.php");
     }
     else {
       echo "Brugeren blev ikke oprettet pga. SQL fejl.";
