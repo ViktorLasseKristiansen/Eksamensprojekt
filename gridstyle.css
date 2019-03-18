@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.grid{
+	display: grid;
+  grid-template-columns: 5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  text-align: center;
+}
+.grid div:nth-child(even){
+	background-color: lightgrey;
+}
+.grid div:nth-child(odd){
+	background-color: darkgrey;
+}
