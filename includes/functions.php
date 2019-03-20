@@ -10,7 +10,8 @@ function login(){
   $result = $conn->query($sql);
   if ($result->num_rows >0) {
     while ($row =$result->fetch_assoc()) {
-      if ($password == $row['user_password']) {
+      $passCheck = password_verify($password, $row['user_password']);
+      if ($passCheck == true) {
         $_SESSION['user_id'] = $row['user_id'];
       echo"<script type='text/javascript'>document.location.href='./';</script>";
       }
@@ -36,6 +37,17 @@ function loadFirstname(){
     }
 }
 
+function loadLastname(){
+  global $conn;
+    $sql="SELECT user_lastname FROM users WHERE user_id='".$_SESSION['user_id']."'";
+    $result = $conn->query($sql);
+    if ($result->num_rows >0) {
+      while ($row =$result->fetch_assoc()){
+        return $row['user_lastname'];
+      }
+    }
+}
+
 function signup(){
   global $conn;
   $firstname =mysqli_escape_string($conn,$_POST['signup_firstname']);
@@ -50,11 +62,11 @@ function signup(){
   $sql="SELECT user_email FROM users WHERE user_email='$email'OR user_username='$username'";
   $result=$conn->query($sql);
   if($result->num_rows<1){
-    $sql2="INSERT INTO users(user_firstname, user_lastname, user_email, user_username, user_password)
-    VALUES('$user_firstname', '$user_lastname', '$user_email', '$user_username', '$hashpassword')";
-    if ($conn->$query($sql2)=== TRUE) {
+  $sql2="INSERT INTO users (user_firstname, user_lastname, user_email, user_username, user_password)
+    VALUES ('$firstname', '$lastname', '$email', '$username', '$hashpassword')";
+    if ($conn-> query($sql2) === TRUE) {
       // Bruger oprettet
-      header("Location:login.php");
+      echo"<script type='text/javascript'>document.location.href='./login.php';</script>";
     }
     else {
       echo "Brugeren blev ikke oprettet pga. SQL fejl.";

@@ -1,16 +1,16 @@
 <?php
 require("includes/header.php");
 if (isset($_POST['signup_submit'])) {
-  if (!empty($_POST[signup_])
-    OR  !empty($_POST[signup_firstname])
-    OR  !empty($_POST[signup_lastname])
-    OR  !empty($_POST[signup_email])
-    OR  !empty($_POST[signup_username])
-    OR  !empty($_POST[signup_password])
-    OR  !empty($_POST[signup_repassword]))
+  if (!empty($_POST['signup_submit'])
+    OR  !empty($_POST['signup_firstname'])
+    OR  !empty($_POST['signup_lastname'])
+    OR  !empty($_POST['signup_email'])
+    OR  !empty($_POST['signup_username'])
+    OR  !empty($_POST['signup_password'])
+    OR  !empty($_POST['signup_repassword']))
     {
-    if ($_POST['signup_password']==['signup_repassword']) {
-
+    if ($_POST['signup_password'] == $_POST['signup_repassword']) {
+        signup();
     }
     else {
       echo "De to kodeord var ikke ens";
