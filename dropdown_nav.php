@@ -6,13 +6,16 @@
     <link rel="stylesheet" type="text/css" href="style_nav.css">
   </head>
   <body>
+    <?php
+    if isset(9)
+     ?>
 
 <nav>
   <p>Navigation</p>
   <ul>
     <li><a href="#">Personer</a>
       <ul>
-        <li><a href="#">Person 1</a></li>
+        <li><a href="dropdown_:nav.php?p_id=1">Person 1</a></li>
         <li><a href="#">Person 2</a></li>
         <li><a href="#">Person 3</a></li>
         <li><a href="#">Person 4</a></li>
