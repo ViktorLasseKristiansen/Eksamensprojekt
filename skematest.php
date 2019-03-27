@@ -1,3 +1,5 @@
+<?php
+require("includes/header.php");?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -87,11 +89,11 @@
 <?php
 global $conn;
 
-$sql = "SELECT * FROM modules LIMIT 1";
+$sql = "SELECT * FROM user";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 	while($row = $result->fetch_assoc()) {
-		$sql2 = "SELECT * FROM teams WHERE team_id='".$row['module_team']."'";
+		$sql2 = "SELECT * FROM hold WHERE hold_id='".$row['team_name']."'";
 		$result2 = $conn->query($sql2);
 		if ($result2->num_rows > 0) {
 			while($row2 = $result2->fetch_assoc()) {
@@ -102,81 +104,7 @@ if ($result->num_rows > 0) {
 		}
 	}
 }
-$sql = "SELECT * FROM modules LIMIT 1";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-	while($row = $result->fetch_assoc()) {
-		$sql2 = "SELECT * FROM teams WHERE team_id='".$row['module_team']."'";
-		$result2 = $conn->query($sql2);
-		if ($result2->num_rows > 0) {
-			while($row2 = $result2->fetch_assoc()) {
-				echo '<script type="text/javascript">
-	document.getElementById("mon_second_module").innerHTML = "'.$row2['team_name'].'";
-</script>';
-			}
-		}
-	}
-}
-$sql = "SELECT * FROM modules LIMIT 1";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-	while($row = $result->fetch_assoc()) {
-		$sql2 = "SELECT * FROM teams WHERE team_id='".$row['module_team']."'";
-		$result2 = $conn->query($sql2);
-		if ($result2->num_rows > 0) {
-			while($row2 = $result2->fetch_assoc()) {
-				echo '<script type="text/javascript">
-	document.getElementById("mon_third_module").innerHTML = "'.$row2['team_name'].'";
-</script>';
-			}
-		}
-	}
-}
-$sql = "SELECT * FROM modules LIMIT 1";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-	while($row = $result->fetch_assoc()) {
-		$sql2 = "SELECT * FROM teams WHERE team_id='".$row['module_team']."'";
-		$result2 = $conn->query($sql2);
-		if ($result2->num_rows > 0) {
-			while($row2 = $result2->fetch_assoc()) {
-				echo '<script type="text/javascript">
-	document.getElementById("mon_fourth_module").innerHTML = "'.$row2['team_name'].'";
-</script>';
-			}
-		}
-	}
-}
-$sql = "SELECT * FROM modules LIMIT 1";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-	while($row = $result->fetch_assoc()) {
-		$sql2 = "SELECT * FROM teams WHERE team_id='".$row['module_team']."'";
-		$result2 = $conn->query($sql2);
-		if ($result2->num_rows > 0) {
-			while($row2 = $result2->fetch_assoc()) {
-				echo '<script type="text/javascript">
-	document.getElementById("mon_fifth_module").innerHTML = "'.$row2['team_name'].'";
-</script>';
-			}
-		}
-	}
-}
-$sql = "SELECT * FROM modules LIMIT 1";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-	while($row = $result->fetch_assoc()) {
-		$sql2 = "SELECT * FROM teams WHERE team_id='".$row['module_team']."'";
-		$result2 = $conn->query($sql2);
-		if ($result2->num_rows > 0) {
-			while($row2 = $result2->fetch_assoc()) {
-				echo '<script type="text/javascript">
-	document.getElementById("mon_sixth_module").innerHTML = "'.$row2['team_name'].'";
-</script>';
-			}
-		}
-	}
-}
+
 else{
 	echo "ingen moduler";
 }
