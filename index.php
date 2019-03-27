@@ -13,6 +13,6 @@ if (!isset($_SESSION['user_id'])) {
           }
           ?>
       </div>
-
+<a href="nyt_forloeb.php">Opret forløb</a>
   </body>
 </html>

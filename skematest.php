@@ -93,12 +93,12 @@ $sql = "SELECT * FROM user";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 	while($row = $result->fetch_assoc()) {
-		$sql2 = "SELECT * FROM hold WHERE hold_id='".$row['team_name']."'";
+		$sql2 = "SELECT * FROM hold WHERE hold_id='".$row['hold_navn']."'";
 		$result2 = $conn->query($sql2);
 		if ($result2->num_rows > 0) {
 			while($row2 = $result2->fetch_assoc()) {
 				echo '<script type="text/javascript">
-	document.getElementById("mon_first_module").innerHTML = "'.$row2['team_name'].'";
+	document.getElementById("mon_first_module").innerHTML = "'.$row2['hold_navn'].'";
 </script>';
 			}
 		}
