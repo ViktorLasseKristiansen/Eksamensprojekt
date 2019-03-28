@@ -27,10 +27,11 @@ if (isset($_POST['opret_forloeb'])) {
         <input type="date" name="slut_dato" placeholder="Angiv periode">
         <input type="time" name="slut_tid" placeholder="Angiv periode">
       </b></p>
-        <!<input type="text" name="signup_firstname" placeholder="Personer">
-        <!<input type="text" name="signup_firstname" placeholder="Teams">
-        <!<input type="text" name="signup_firstname" placeholder="Ledere">
+        <input type="text" name="signup_firstname" placeholder="Personer">
+        <input type="text" name="signup_firstname" placeholder="Teams">
+        <input type="text" name="signup_firstname" placeholder="Ledere">
     <input type="submit" name="opret_forloeb" value="Opret forloeb">
+
  </form>
 </div>
 </body>
