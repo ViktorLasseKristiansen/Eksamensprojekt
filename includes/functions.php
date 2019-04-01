@@ -100,4 +100,4 @@ function nyt_forloeb(){
   else {
     echo "der findes allerede et forløb med dette navn";
   }
-}
+};
