@@ -101,3 +101,26 @@ function nyt_forloeb(){
     echo "der findes allerede et forløb med dette navn";
   }
 };
+function new_team(){
+  global $conn;
+  $team_name =mysqli_escape_string($conn,$_POST['team_name']);
+  $team_leader =mysqli_escape_string($conn,$_POST['team_leader']);
+  $team_member =mysqli_escape_string($conn,$_POST['team_member']);
+
+  $sql="SELECT team_name FROM team WHERE team_name ='$team_name'";
+  $result=$conn->query($sql);
+  if($result->num_rows<1){
+  $sql2="INSERT INTO team (team_name, team_leader, team_member)
+    VALUES ('team_name', 'team_leader', 'team_member')";
+    if ($conn-> query($sql2) === TRUE) {
+      // Bruger oprettet
+      echo"<script type='text/javascript'>document.location.href='./team_oversigt.php';</script>";
+    }
+    else {
+      echo "Hold blev ikke oprettet pga. SQL fejl.";
+    }
+  }
+  else {
+    echo "der findes allerede et hold med dette navn";
+  }
+};

@@ -15,7 +15,7 @@ if (isset($_POST['opret_forloeb'])) {
   }
 ?>
 <div class="wrapper">
-  <h1>Opret Nyt Forloeb</h1>
+  <h1>Opret nyt forløb</h1>
     <form action="nyt_forloeb.php" method="POST">
       <p><b>Angiv forloebsnavn:</b></p>
       <input type="text" name="forloeb_navn" placeholder="">
