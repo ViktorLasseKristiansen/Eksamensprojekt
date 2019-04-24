@@ -1,19 +1,10 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<?php
-  include "includes/db.php";
-  $user_id=4;
-  $stmt = $conn->prepare("select * from user where user_id=?");
-  $stmt->bind_param("s",$user_id);
-  $stmt->execute();
-  $result = $stmt->get_result();
-  $row = $result->fetch_assoc();
- ?>
-
 <style>
 body {
   font-family: "Lato", sans-serif;
@@ -75,7 +66,19 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
 </style>
+
+<?php
+  include "includes/db.php";
+  $user_id=4;
+  $stmt = $conn->prepare("select * from user where user_id=?");
+  $stmt->bind_param("s",$user_id);
+  $stmt->execute();
+  $result = $stmt->get_result();
+  $row = $result->fetch_assoc();
+ ?>
+
 </head>
 <body>
 

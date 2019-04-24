@@ -1,4 +1,4 @@
-<?php require("includes/header.php");?>
+<?php require("includes/header.php"); require("includes/dropdown_nav.php");?>
 
 <?php
 if (!isset($_SESSION['user_id'])) {
