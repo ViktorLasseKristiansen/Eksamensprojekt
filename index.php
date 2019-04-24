@@ -98,7 +98,7 @@ if ($result->num_rows > 0) {
 		if ($result2->num_rows > 0) {
 			while($row2 = $result2->fetch_assoc()) {
 				echo '<script type="text/javascript">
-	document.getElementById("mon_first_module").innerHTML = "'.$row2['hold_navn'].'";
+	document.getElementById("mon_first_module").innerHTML = "'.$row2['team_name'].'";
 </script>';
 			}
 		}
