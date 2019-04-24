@@ -95,7 +95,7 @@ if (!isset($_SESSION['user_id'])) {
 <?php
 global $conn;
 
-$sql = "SELECT * FROM user";
+$sql = "SELECT * FROM team";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 	while($row = $result->fetch_assoc()) {
