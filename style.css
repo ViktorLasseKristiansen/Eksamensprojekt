@@ -64,7 +64,10 @@ input[type=submit]{
 }
 .wrapper{
 	width: 80%;
-	margin: auto;
+	margin-left: 270px;
+}
+.indhold{
+	margin-left: 275px;
 }
 h3{
 	font-weight: 400;

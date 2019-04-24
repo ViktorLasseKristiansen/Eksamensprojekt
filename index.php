@@ -13,6 +13,10 @@ if (!isset($_SESSION['user_id'])) {
           }
           ?>
       </div>
+      <div class="indhold">
+
+      <div class="table">
+
 <a href="nyt_forloeb.php">Opret forløb</a>
 <a href="new_team.php">Opret hold</a>
 <html>
@@ -85,6 +89,8 @@ if (!isset($_SESSION['user_id'])) {
 		<td id="sun_fourth_module"></td>
 	</tr>
 </table>
+</div>
+</div>
 
 <?php
 global $conn;
