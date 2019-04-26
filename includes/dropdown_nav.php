@@ -29,7 +29,7 @@
                 <div class="dropdown-container">
                   <a href="#">Skema</a>
                   <a href="#">Hold</a>
-                  <a href="#">Besked</a>
+                  <a href="JavaScript:newPopup('#');">Besked</a>
                 </div>
           <button class="dropdown-btn">Viktor
             <i class="fa fa-caret-down"></i>
@@ -78,6 +78,13 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 </script>
+
+<script type="text/javascript">
+  function newPopup(url) {
+  	popupWindow = window.open(
+  		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=yes')
+  }
+  </script>
 
 </body>
 </html>
