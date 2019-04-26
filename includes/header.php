@@ -14,6 +14,7 @@ require("includes/functions.php");
       <ul>
         <li> <a href="index.php">Forside</a></li>
         <?php if (isset($_SESSION['user_id'])): ?>
+        <li><a href="inbox.php">Inbox</a></li>
         <li><a href="includes/logout.php">Log ud</a></li>
       <?php else:?>
         <li><a href="login.php">Login</a></li>
