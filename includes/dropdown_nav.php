@@ -20,11 +20,11 @@
 
 <div class="sidenav">
   <button class="dropdown-btn">Personer
-    <i class="fa fa-caret-down"></i>
+    <i></i>
       </button>
         <div class="dropdown-container">
           <button class="dropdown-btn">Anders
-            <i class="fa fa-caret-down"></i>
+            <i></i>
               </button>
                 <div class="dropdown-container">
                   <a href="#">Skema</a>
@@ -32,16 +32,16 @@
                   <a href="JavaScript:newPopup('#');">Besked</a>
                 </div>
           <button class="dropdown-btn">Viktor
-            <i class="fa fa-caret-down"></i>
+            <i></i>
               </button>
                 <div class="dropdown-container">
                   <a href="#">Skema</a>
                   <a href="#">Hold</a>
-                  <a href="#">Besked</a>
+                  <a href="JavaScript:newPopup('#');">Besked</a>
                 </div>
         </div>
   <button class="dropdown-btn">Klasse
-    <i class="fa fa-caret-down"></i>
+    <i></i>
       </button>
         <div class="dropdown-container">
           <button class="dropdown-btn">3.3
@@ -50,15 +50,15 @@
                 <div class="dropdown-container">
                   <a href="#">Skema</a>
                   <a href="#">Information</a>
-                  <a href="#">Besked</a>
+                  <a href="JavaScript:newPopup('#');">Besked</a>
                 </div>
           <button class="dropdown-btn">3.4
-            <i class="fa fa-caret-down"></i>
+            <i></i>
               </button>
                 <div class="dropdown-container">
                   <a href="#">Skema</a>
                   <a href="#">Information</a>
-                  <a href="#">Besked</a>
+                  <a href="JavaScript:newPopup('#');">Besked</a>
                 </div>
         </div>
 </div>
@@ -81,7 +81,7 @@ for (i = 0; i < dropdown.length; i++) {
 }
 </script>
 
-<script type="text/javascript">
+<script>
   function newPopup(url) {
   	popupWindow = window.open(
   		url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=yes')
