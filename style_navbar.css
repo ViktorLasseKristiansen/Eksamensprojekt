@@ -29,12 +29,11 @@ body {
 }
 
 .sidenav a:hover, .dropdown-btn:hover {
-  color: grey;
+  background-color: gray;
 }
 
 .main {
-  margin-left: 250px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
+  margin-left: 250px;
   padding: 0px 10px;
 }
 
@@ -45,7 +44,7 @@ body {
 
 .dropdown-container {
   display: none;
-  background-color: #808e9b;
+  background-color: silver;
   padding-left: 8px;
 }
 
