@@ -40,23 +40,25 @@
                   <a href="#">Besked</a>
                 </div>
         </div>
-  <button class="dropdown-btn">Hold
+  <button class="dropdown-btn">Klasse
     <i class="fa fa-caret-down"></i>
       </button>
         <div class="dropdown-container">
-          <button class="dropdown-btn">Hold 1 - Planlægning
+          <button class="dropdown-btn">3.3
             <i class="fa fa-caret-down"></i>
               </button>
                 <div class="dropdown-container">
-                  <a href="#">Kontakt</a>
+                  <a href="#">Skema</a>
                   <a href="#">Information</a>
+                  <a href="#">Besked</a>
                 </div>
-          <button class="dropdown-btn">Hold 2 - Udvikling
+          <button class="dropdown-btn">3.4
             <i class="fa fa-caret-down"></i>
               </button>
                 <div class="dropdown-container">
-                  <a href="#">Kontakt</a>
+                  <a href="#">Skema</a>
                   <a href="#">Information</a>
+                  <a href="#">Besked</a>
                 </div>
         </div>
 </div>
