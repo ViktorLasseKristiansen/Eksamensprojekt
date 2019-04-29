@@ -28,16 +28,16 @@
               </button>
                 <div class="dropdown-container">
                   <a href="#">Skema</a>
-                  <a href="#">Hold</a>
-                  <a href="JavaScript:newPopup('#');">Besked</a>
+                  <a href="information.php">Information</a>
+                  <a href="JavaScript:newPopup('outbox.php');">Besked</a>
                 </div>
           <button class="dropdown-btn">Viktor
             <i></i>
               </button>
                 <div class="dropdown-container">
                   <a href="#">Skema</a>
-                  <a href="#">Hold</a>
-                  <a href="JavaScript:newPopup('#');">Besked</a>
+                  <a href="#">Information</a>
+                  <a href="JavaScript:newPopup('outbox.php');">Besked</a>
                 </div>
         </div>
   <button class="dropdown-btn">Klasse
@@ -50,7 +50,7 @@
                 <div class="dropdown-container">
                   <a href="#">Skema</a>
                   <a href="#">Information</a>
-                  <a href="JavaScript:newPopup('#');">Besked</a>
+                  <a href="JavaScript:newPopup('outbox.php');">Besked</a>
                 </div>
           <button class="dropdown-btn">3.4
             <i></i>
@@ -58,7 +58,7 @@
                 <div class="dropdown-container">
                   <a href="#">Skema</a>
                   <a href="#">Information</a>
-                  <a href="JavaScript:newPopup('#');">Besked</a>
+                  <a href="JavaScript:newPopup('outbox.php');">Besked</a>
                 </div>
         </div>
 </div>
