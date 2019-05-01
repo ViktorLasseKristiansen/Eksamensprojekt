@@ -46,6 +46,7 @@ body {
   display: none;
   background-color: silver;
   padding-left: 8px;
+  color: #black;
 }
 
 @media screen and (max-height: 450px) {
