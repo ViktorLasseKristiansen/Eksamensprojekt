@@ -37,10 +37,10 @@ if (!isset($_SESSION['user_id'])) {
 	</tr>
 	<tr>
 		<td>8:10-9:40</td>
-		<td id="mon_first_module">Dansk</td>
+		<td id="mon_first_module">Dan-A</td>
 		<td id="tue_first_module"></td>
-		<td id="wed_first_module"></td>
-		<td id="thu_first_module"></td>
+		<td id="wed_first_module">Mat-A</td>
+		<td id="thu_first_module">Dan-A</td>
 		<td id="fri_first_module"></td>
 		<td id="sat_first_module"></td>
 		<td id="sun_first_module"></td>
@@ -51,10 +51,10 @@ if (!isset($_SESSION['user_id'])) {
 	</tr>
 	<tr>
 		<td>10:00-11:30</td>
-		<td id="mon_second_module">Dansk</td>
-		<td id="tue_second_module"></td>
+		<td id="mon_second_module">Tekn-A</td>
+		<td id="tue_second_module">IT-B</td>
 		<td id="wed_second_module"></td>
-		<td id="thu_second_module"></td>
+		<td id="thu_second_module">Tekn-A</td>
 		<td id="fri_second_module"></td>
 		<td id="sat_second_module"></td>
 		<td id="sun_second_module"></td>
@@ -65,11 +65,11 @@ if (!isset($_SESSION['user_id'])) {
 	</tr>
 	<tr>
 		<td>12:00-13:30</td>
-		<td id="mon_third_module">Dansk</td>
-		<td id="tue_third_module"></td>
+		<td id="mon_third_module">Tekn-A</td>
+		<td id="tue_third_module">Prog-C</td>
 		<td id="wed_third_module"></td>
-		<td id="thu_third_module"></td>
-		<td id="fri_third_module"></td>
+		<td id="thu_third_module">Teknik-A</td>
+		<td id="fri_third_module">IT-B</td>
 		<td id="sat_third_module"></td>
 		<td id="sun_third_module"></td>
 
@@ -80,11 +80,11 @@ if (!isset($_SESSION['user_id'])) {
 	</tr>
 	<tr>
 		<td>13:45-15:15</td>
-		<td id="mon_fourth_module">Dansk</td>
+		<td id="mon_fourth_module">Mat-A</td>
 		<td id="tue_fourth_module"></td>
-		<td id="wed_fourth_module"></td>
-		<td id="thu_fourth_module"></td>
-		<td id="fri_fourth_module"></td>
+		<td id="wed_fourth_module">Teknik-A</td>
+		<td id="thu_fourth_module">Prog-C</td>
+		<td id="fri_fourth_module">Prog-C</td>
 		<td id="sat_fourth_module"></td>
 		<td id="sun_fourth_module"></td>
 	</tr>
