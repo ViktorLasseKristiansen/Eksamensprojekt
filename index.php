@@ -39,9 +39,9 @@ if (!isset($_SESSION['user_id'])) {
 		<td>8:10-9:40</td>
 		<td id="mon_first_module">Dansk</td>
 		<td id="tue_first_module"></td>
-		<td id="wed_first_module"></td>
+		<td id="wed_first_module">Engelsk</td>
 		<td id="thu_first_module"></td>
-		<td id="fri_first_module"></td>
+		<td id="fri_first_module">Matematik</td>
 		<td id="sat_first_module"></td>
 		<td id="sun_first_module"></td>
 	</tr>
